@@ -1,0 +1,39 @@
+@import "./page-header";
+@import "./page-footer";
+@import "./navigation-panel";
+@import "../app-variables";
+
+$page-header-height: 50px;
+$nav-panel-width: 150px;
+$page-footer-height: 30px;
+
+.page-header-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: $page-header-height;
+    background-color: $primary-color;
+
+    .logo {
+        width: $nav-panel-width;
+    }
+}
+
+.nav-panel-wrapper {
+    position: fixed;
+    left: 0;
+    top: $page-header-height;
+    bottom: 0;
+    width: $nav-panel-width;
+    background-color: $primary-color;
+}
+
+.page-footer-wrapper {
+    position: fixed;
+    bottom: 0;
+    left: $nav-panel-width;
+    right: 0;
+    background-color: $primary-color;
+    height: $page-footer-height;
+}

@@ -1,0 +1,12 @@
+
+.page-header-wrapper {
+    display: flex;
+    .logo {
+        background-color: white;
+    }
+    .header-item {
+        align-content: center;
+        color: white;
+        padding-right: 10px;
+    }
+}
