@@ -1,3 +1,6 @@
-<div class="nav-panel-wrapper">
-    
+<div class="nav-panel-wrapper flex-column">
+    <div class="btn" *ngFor="let parentId of parentIdList" (click)="routeTo(parentId)">
+        {{ menuMap[parentId].description }}
+        <div class="icon"><i [className]="menuMap[parentId].icon"></i></div>
+    </div>
 </div>

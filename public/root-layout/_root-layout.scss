@@ -4,8 +4,9 @@
 @import "../app-variables";
 
 $page-header-height: 50px;
-$nav-panel-width: 150px;
+$nav-panel-width: 240px;
 $page-footer-height: 30px;
+$closed-nav-panel: -199px;
 
 .page-header-wrapper {
     position: fixed;
@@ -27,6 +28,10 @@ $page-footer-height: 30px;
     bottom: 0;
     width: $nav-panel-width;
     background-color: $primary-color;
+
+    &.minimize {
+        left: $closed-nav-panel;
+    }
 }
 
 .page-footer-wrapper {
@@ -36,4 +41,8 @@ $page-footer-height: 30px;
     right: 0;
     background-color: $primary-color;
     height: $page-footer-height;
+
+    &.minimize {
+        left: $closed-nav-panel
+    }
 }

@@ -1,12 +1,22 @@
 
 .page-header-wrapper {
     display: flex;
+    align-content: center;
+    flex-wrap: wrap;
     .logo {
-        background-color: white;
+        // background-color: white;
     }
     .header-item {
         align-content: center;
         color: white;
         padding-right: 10px;
+    }
+
+    .toggle-menu-btn {
+        align-content: center;
+        background-color: #bcdfda;
+        border-radius: 100px;
+        height: fit-content;
+        margin-left: 10px;
     }
 }
